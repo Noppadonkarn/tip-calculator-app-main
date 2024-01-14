@@ -67,7 +67,7 @@ export function MainCalculatorTip() {
 
   return (
     <div className="flex flex-col md:flex-row border p-10 rounded-3xl bg-white gap-14 md:max-w-[1400px]">
-      <div className="flex flex-col gap-10 md:max-w-[690px]">
+      <div className="flex flex-col gap-10 md:max-w-[645px]">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold text-teal-700">Bill</h2>
           <div class="relative mt-2 rounded-md shadow-sm h-14 bg-[#F3F8FB]">
@@ -83,7 +83,7 @@ export function MainCalculatorTip() {
             {
               percentTip.map((items, index)=> {
                 return(
-                <button key={index} className={`w-52 h-16 rounded-md ${
+                <button key={index} className={`w-48 h-16 rounded-md ${
                   selectedTip === items ? "bg-[#26C2AD] text-[#00474B]" : "bg-[#00474B] text-white"
                 } hover:bg-[#26C2AD] hover:text-[#00474B]`} onClick={() => handleTipButtonClick(items)}>
                   <p className=" text-3xl font-semibold">{items}%</p>
@@ -91,7 +91,7 @@ export function MainCalculatorTip() {
                 )
               })
             }
-            <input id="" type="number" value={inputTipCustom}  placeholder="CUSTOM" className="border outline-[#26C2AD] w-52 h-16 rounded-md text-3xl font-medium text-center text-[#557976] bg-[#F3F8FB]" onChange={(e) => {handleChangeInputCustomTip(e.target.value)}} />
+            <input id="" type="number" value={inputTipCustom}  placeholder="CUSTOM" className="border outline-[#26C2AD] w-48 h-16 rounded-md text-3xl font-medium text-center text-[#557976] bg-[#F3F8FB]" onChange={(e) => {handleChangeInputCustomTip(e.target.value)}} />
           </div>
         </div>
         <div className="flex flex-col">

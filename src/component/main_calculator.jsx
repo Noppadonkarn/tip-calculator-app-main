@@ -67,7 +67,7 @@ export function MainCalculatorTip() {
 
   return (
     <div className="flex flex-col md:flex-row border p-10 rounded-3xl bg-white gap-14 md:max-w-[1400px]">
-      <div className="flex flex-col gap-10 md:max-w-[640px]">
+      <div className="flex flex-col gap-10 md:max-w-[690px]">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold text-teal-700">Bill</h2>
           <div class="relative mt-2 rounded-md shadow-sm h-14 bg-[#F3F8FB]">
